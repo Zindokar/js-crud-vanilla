@@ -108,3 +108,42 @@ td {
 td:last-child {
     width: 220px;
 }
+
+.hint {
+    margin: 10px 0 0;
+    color: #555;
+    font-size: 13px;
+}
+
+.status-message {
+    text-align: center;
+    background-color: #eef2ff;
+    color: #2f6fed;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 999px;
+    background: #eef2ff;
+    border: 1px solid #dbe3ff;
+}
+
+@media (max-width: 760px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    td:last-child {
+        width: auto;
+    }
+
+    .tableHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
